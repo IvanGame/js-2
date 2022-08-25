@@ -1,1 +1,98 @@
 @import "../nullcss/style.scss";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+body {
+    font-family: "Exo 2", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1330px;
+    padding: 0 15px;
+}
+
+.header {
+    height: 80px;
+    background-color: rgb(80, 74, 74);
+
+    &__con {
+        height: 100%;
+    }
+
+    &__row {
+        display: flex;
+        height: 100%;
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+.cart-button {
+    height: 40px;
+    width: 70px;
+    border-radius: 10%;
+    border: 2px solid;
+    border-color: #ffffff;
+    background-color: rgb(80, 74, 74);
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #ffffff;
+    color: rgb(80, 74, 74);
+}
+
+.goods-list {
+    margin-top: 50px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding: 10px 10px 10px 10px;
+        background-color: #ffffff;
+        border: 2px solid;
+        border-radius: 10px;
+        border-color: #504a4a;
+
+        & h3 {
+            font-size: 20px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+
+        & button {
+            height: 40px;
+            width: 80px;
+            border-radius: 10%;
+            border: 2px solid;
+            border-color: #ffffff;
+            background-color: rgb(80, 74, 74);
+            color: #ffffff;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        & button:hover {
+            background-color: #ffffff;
+            color: rgb(80, 74, 74);
+            border-color: #504a4a;
+        }
+    }
+}
