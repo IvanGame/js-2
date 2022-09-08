@@ -1,1 +1,170 @@
 @import "../nullcss/style.scss";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
+
+body {
+    font-family: "Exo 2", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1330px;
+    padding: 0 15px;
+}
+
+.header {
+    height: 80px;
+    background-color: rgb(80, 74, 74);
+
+    &__con {
+        height: 100%;
+    }
+
+    &__row {
+        display: flex;
+        height: 100%;
+        justify-content: end;
+        align-items: center;
+    }
+}
+
+.cart-button {
+    height: 40px;
+    width: 70px;
+    border-radius: 10%;
+    border: 2px solid;
+    border-color: #ffffff;
+    background-color: rgb(80, 74, 74);
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.cart-button:hover {
+    background-color: #ffffff;
+    color: rgb(80, 74, 74);
+}
+
+.goods-list {
+    margin-top: 50px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding: 10px 10px 10px 10px;
+        background-color: #ffffff;
+        border: 2px solid;
+        border-radius: 10px;
+        border-color: #504a4a;
+
+        & h3 {
+            font-size: 20px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+
+        & button {
+            height: 40px;
+            width: 80px;
+            border-radius: 10%;
+            border: 2px solid;
+            border-color: #ffffff;
+            background-color: rgb(80, 74, 74);
+            color: #ffffff;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        & button:hover {
+            background-color: #ffffff;
+            color: rgb(80, 74, 74);
+            border-color: #504a4a;
+        }
+    }
+}
+
+.cart-block {
+    display: block;
+    position: absolute;
+    top: 70px;
+    background-color: #fff;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.product {
+    &__bio {
+        display: flex;
+    }
+
+    &__desc {
+        margin-left: 10px;
+    }
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    &__quantity {
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    &__single-price {
+        font-size: 10px;
+    }
+
+    &__right {
+        margin-top: 14px;
+        text-align: right;
+    }
+
+    &__price {
+        margin-bottom: 5px;
+    }
+
+    &__del-btn {
+        margin-top: 5px;
+        background-color: #2f2a2d;
+        padding: 5px 15px;
+        border: 1px solid transparent;
+        color: #fafafa;
+        border-radius: 5px;
+        transition: all ease-in-out 0.4s;
+        cursor: pointer;
+    }
+
+    &__del-btn:hover {
+        background-color: #fafafa;
+        color: #2f2a2d;
+        border: 1px solid #2f2a2d;
+    }
+}
